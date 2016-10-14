@@ -1,10 +1,10 @@
 {
   "name": "jo-i18n",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A i18n library, you can use it set dictionary and format message base on the standard BCP 47 and ICU.",
   "main": "index.js",
   "scripts": {
-    "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack src/index.js dist/index.min.js"
+    "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack src/index.js index.js"
   },
   "repository": {
     "type": "git",
