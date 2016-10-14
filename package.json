@@ -1,0 +1,22 @@
+{
+  "name": "jo-i18n",
+  "version": "0.0.1",
+  "description": "A i18n library, you can use it set dictionary and format message base on the standard BCP 47 and ICU.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jocs/jo-i18n.git"
+  },
+  "keywords": [
+    "i18n"
+  ],
+  "author": "Jocs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jocs/jo-i18n/issues"
+  },
+  "homepage": "https://github.com/Jocs/jo-i18n#readme"
+}
