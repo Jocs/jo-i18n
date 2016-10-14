@@ -4,7 +4,7 @@
   "description": "A i18n library, you can use it set dictionary and format message base on the standard BCP 47 and ICU.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack src/index.js dist/index.min.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
+    "cross-env": "^3.1.2",
     "eslint": "^3.7.1",
     "eslint-plugin-promise": "^3.0.0",
     "eslint-plugin-standard": "^2.0.1",
