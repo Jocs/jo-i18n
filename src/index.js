@@ -54,7 +54,7 @@ export const translateProvider = (angular, name) => {
 			if (childNodes.length !== 0) {
 				childNodes.forEach(c => {
 					if ((c.nodeType === 3 && /\S/.test(c.nodeValue)) || (c.tagName === 'INPUT' && !c.hasAttribute('notranslate'))) result.push(c);
-					if (c.nodeType === 1 && !c.hasAttribute('notranslate')) getNodes(c);
+					if (c.nodeType === 1 && !c.hasAttribute('notranslate') && !c.isContentEditable) getNodes(c);
 				});
 			}
 		})(ele);
