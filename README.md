@@ -53,7 +53,7 @@ __('TOTAL_ITEM', { RES: 2, CAT: 2 })
 // 'They found 2 results in the 2nd category.'
 ```
 
-上面的简单实例展示了jo-i18n在处理性别、单复数和序数等问题的格式化。[更多格式语法](https://messageformat.github.io/guide/)
+上面的简单实例展示了jo-i18n在处理性别、单复数和序数等问题的格式化。[更多格式语法](https://github.com/Jocs/jo-i18n/blob/master/docs/format-guide.md)
 
 #### 结合其他框架
 
