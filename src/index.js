@@ -5,13 +5,19 @@ import MessageFormat from 'messageformat'
 
 const initDict = {}
 
-const getMetaLanguage = () => {
-	const metas = document.getElementsByTagName('META')
-	const langMeta = [...metas].filter(m => m.getAttribute('http-equiv') === 'Content-Language')[0]
-	return langMeta && langMeta.getAttribute('content') || false
+const getHtmlLang = () => {
+	const html = document.documentElement
+	if (html.hasAttribute('lang')) {
+		return html.getAttribute('lang')
+	}
 }
 
-const locale = getMetaLanguage() || window.navigator.language || 'zh-CN'
+const getMetaLanguage = () => {
+	const langMeta = document.querySelector('meta[http-equiv="content-language"]')
+	return langMeta && langMeta.getAttribute('content')
+}
+
+const locale = getHtmlLang() || getMetaLanguage() || window.navigator.language || 'zh-CN'
 /**
  * [扩展initDist方法]
  * @param  {[object]} dict [扩展的字典]
